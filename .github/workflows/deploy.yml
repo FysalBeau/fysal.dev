@@ -43,7 +43,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: production-files
-          path: ./dist
+          # Upload entire repository
+          path: './table/dist/'
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
