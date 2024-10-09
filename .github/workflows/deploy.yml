@@ -16,14 +16,9 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
-        with:
-          node-version: '20'  # Ensure this matches your project's requirements
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v2
-        with:
-          working-directory: ./src  # Adjust this path if needed
-          install-command: npm ci --frozen-lockfile --silent
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
