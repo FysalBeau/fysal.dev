@@ -1,0 +1,201 @@
+/* Styles for screens with max-width of 600px */
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
+  }
+
+  .contact-background {
+    /* Add styles if necessary */
+  }
+
+  .contact-form {
+    /* Add styles if necessary */
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    width: 20.3125rem; /* 325px -> 20.3125rem */
+  }
+
+  .form-label {
+    font-size: 1rem; /* 16px -> 1rem */
+  }
+
+  .form-input,
+  .form-textarea {
+    border: 0.125rem solid black; /* 2px -> 0.125rem */
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    resize: none;
+  }
+
+  .form-input {
+    height: 2.4375rem; /* 39px -> 2.4375rem */
+  }
+
+  .form-textarea {
+    height: 5rem; /* 80px -> 5rem */
+  }
+
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid black; /* 2px -> 0.125rem */
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    margin-top: 0.625rem; /* 10px -> 0.625rem */
+    height: 2.4375rem; /* 39px -> 2.4375rem */
+  }
+
+  .submit-text {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1rem; /* 16px -> 1rem */
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  .contact-info {
+    width: 20rem; /* 320px -> 20rem */
+    height: 8.75rem; /* 140px -> 8.75rem */
+    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
+  }
+
+  .comment {
+    /* Add styles if necessary */
+  }
+
+  .info-header {
+    font-weight: 600;
+    font-size: 1.125rem; /* 18px -> 1.125rem */
+  }
+
+  .info-text {
+    font-weight: 300;
+    font-size: 1.125rem; /* 18px -> 1.125rem */
+  }
+}
+
+/* Styles for screens with min-width of 600px */
+@media only screen and (min-width: 600px) {
+  .contact-container {
+    width: 56.25rem; /* 900px -> 56.25rem */
+    height: 34.375rem; /* 550px -> 34.375rem */
+    position: relative;
+    margin-bottom: 6.25rem; /* 100px -> 6.25rem */
+  }
+
+  .contact-background {
+    width: 56.25rem; /* 900px -> 56.25rem */
+    height: 34.375rem; /* 550px -> 34.375rem */
+    position: absolute;
+    background: white;
+    box-shadow: 0.75rem 0.75rem 0.25rem #b196e1; /* 12px -> 0.75rem, 4px -> 0.25rem */
+    border-radius: 1.875rem; /* 30px -> 1.875rem */
+    border: 0.125rem solid black; /* 2px -> 0.125rem */
+  }
+
+  .contact-form {
+    width: 24.975rem; /* 399.59px -> 24.975rem */
+    height: 18.95rem; /* Calc reduction 379px -> 18.95rem */
+    position: absolute;
+    left: 25.625rem; /* 410px -> 25.625rem */
+    top: 2.1875rem; /* 35px -> 2.1875rem */
+  }
+
+  .form-field {
+    position: relative;
+    margin-bottom: 1rem; /* 20px -> 1rem (20% reduced calc) */
+  }
+
+  .form-label {
+    color: black;
+    font-size: 0.875rem; /* Calc reduction: 16px -> 0.875rem */
+    font-weight: 400;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    height: 2.4375rem; /* Calc reduction: 39px -> 2.4375rem */
+    border: 0.125rem solid black; /* 2px -> 0.125rem */
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    padding: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
+  }
+
+  .email-field,
+  .message-field {
+    margin-top: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
+  }
+
+  .form-textarea {
+    height: 5rem; /* Calc reduction: 100px -> 5rem */
+    resize: none;
+  }
+
+  .submit-button {
+    width: 26.0625rem; /* 417px -> 26.0625rem */
+    height: 2.5rem; /* Calc reduction: 50px -> 2.5rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem; /* Calc reduction: 20px -> 1.25rem */
+    border: 0.125rem solid black; /* 2px -> 0.125rem */
+    box-sizing: border-box;
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    margin-top: 1.875rem; /* 30px -> 1.875rem */
+  }
+
+  .submit-text {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 0.875rem; /* Calc reduction: 16px -> 0.875rem */
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  .submit-text:hover {
+    text-decoration: underline;
+  }
+
+  .contact-info {
+    width: 17.75rem; /* 284px -> 17.75rem */
+    height: 14.9375rem; /* 239px -> 14.9375rem */
+    position: absolute;
+    left: 4.6875rem; /* 75px -> 4.6875rem */
+    top: 9.3125rem; /* 149px -> 9.3125rem */
+  }
+
+  .comment {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.625rem; /* 26px -> 1.625rem */
+    font-weight: 400;
+  }
+
+  .info-header {
+    color: black;
+    font-size: 1.625rem; /* 26px -> 1.625rem */
+    font-weight: 500;
+  }
+
+  .info-text {
+    color: black;
+    font-size: 1.375rem; /* 22px -> 1.375rem */
+    font-weight: 400;
+  }
+}
