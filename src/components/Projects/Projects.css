@@ -60,7 +60,7 @@
     color: rgba(0, 0, 0, 0.5);
   }
 
-  .project-cta {
+  .project-button {
     width: 18.875rem; /* 302px -> 18.875rem */
     height: 3.0625rem; /* 49px -> 3.0625rem */
     box-shadow: 0px 0px 0px 0.125rem black; /* 2px -> 0.125rem */
@@ -70,7 +70,7 @@
     align-items: center;
   }
 
-  .cta-text {
+  .button-text {
     /* Add if necessary */
   }
 
@@ -153,7 +153,7 @@
     word-wrap: break-word;
   }
 
-  .project-cta {
+  .project-button {
     width: 26rem; /* 416px -> 26rem */
     height: 3.5rem; /* 56px -> 3.5rem */
     position: absolute;
@@ -166,15 +166,29 @@
     justify-content: center;
     align-items: center;
     margin-top: 0.9375rem; /* 15px -> 0.9375rem */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
 
-  .cta-text {
+  .project-button:hover {
+    background-color: #ee7772;
+    box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
+  }
+
+ 
+
+  .project-button-text {
     width: 23rem; /* 368px -> 23rem */
     height: 2.5rem; /* 40px -> 2.5rem */
     color: black;
     font-size: 1.25rem; /* 20px -> 1.25rem */
     font-weight: 500;
     align-content: center;
+    transition: color 0.3s ease;
+  }
+
+  .project-button:hover .project-button-text {
+    color: white;
   }
 
   .project-image {

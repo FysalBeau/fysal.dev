@@ -68,14 +68,17 @@ const Header = ({ scrollToSection }) => {
         <img src="./assets/close.svg" className="close" alt="close" />
 
         <ul>
-          <li>
-            <a href="#about">About</a>
+          <li >
+            <a href="#home" onClick={() => scrollToSection("home")} >Home</a>
+          </li>
+          <li >
+            <a href="#about" onClick={() => scrollToSection("about")} >About</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={() => scrollToSection("projects")}>Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => scrollToSection("contact")}>Contact</a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/fysalbeauferris/">LinkedIn</a>

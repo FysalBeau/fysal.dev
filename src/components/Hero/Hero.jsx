@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css"; // Import the CSS file
 
-const Hero = () => {
+const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
   return (
     <div className="hero-container">
       {/* Background Card */}
@@ -40,8 +40,8 @@ const Hero = () => {
         />
 
         {/* Contact Button */}
-        <div className="contact-button">
-          <div className="button-text">//Contact Me</div>
+        <div className="hero-button" onClick={() => scrollToSection('contact')}>
+          <div className="hero-button-text">//Contact Me</div>
         </div>
       </div>
     </div>

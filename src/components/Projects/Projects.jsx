@@ -79,8 +79,8 @@ const Project = () => {
       </div>
 
       {/* Clickable CTA that redirects to the second page */}
-      <div className="project-cta" onClick={handleRedirect}>
-        <div className="cta-text">//Want to see all my projects?</div>
+      <div className="project-button" onClick={handleRedirect}>
+        <div className="project-button-text">//Want to see all my projects?</div>
       </div>
     </div>
   );
