@@ -35,7 +35,7 @@ const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
         {/* Image */}
         <img
           className="profile-img"
-          src="./assets/hero-image.jpg"
+          src="./assets/images/hero-image.jpg"
           alt="Profile"
         />
 

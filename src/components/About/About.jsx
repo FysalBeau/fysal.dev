@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 
 const images = [
-  './assets/about-image-1.jpg',
-  './assets/about-image-2.jpg',
-  './assets/about-image-3.jpg'
+  './assets/images/about-image-1.jpg',
+  './assets/images/about-image-2.jpg',
+  './assets/images/about-image-3.jpg'
 ];
 
 const About = () => {

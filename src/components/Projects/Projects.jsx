@@ -18,7 +18,7 @@ const Project = () => {
 
       <img
         className="project-image project-image-1"
-        src="./assets/project-1.png"
+        src="./assets/images/project-image-1.jpg"
         alt="Project 1"
       />
 
@@ -28,7 +28,7 @@ const Project = () => {
         <br></br>
         <span className="project-title">Data Science Capstone</span>    <img
           className="project-1-redirect"
-          src="./assets/redirect.svg"
+          src="./assets/icons/redirect.svg"
           alt="Redirct"
           onClick={handleRedirect}
 
@@ -50,7 +50,7 @@ const Project = () => {
 
       <img
         className="project-image project-image-2"
-        src="./assets/project-2.png"
+        src="./assets/images/project-image-2.jpg"
         alt="Project 2"
       />
 
@@ -60,7 +60,7 @@ const Project = () => {
         <br></br>
         <span className="project-title">Mkrs Union</span> <img
           className="project-1-redirect"
-          src="./assets/redirect.svg"
+          src="./assets/icons/redirect.svg"
           alt="Redirct"
           onClick={handleRedirect}
         />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import defaultLogo from "/assets/logo-default.svg";
-import hoverLogo from "/assets/logo-hover.svg";
+import defaultLogo from "/assets/icons/logo-default.svg";
+import hoverLogo from "/assets/icons/logo-hover.svg";
 
 const Header = ({ scrollToSection }) => {
   const [logoSrc, setLogoSrc] = useState(defaultLogo);
@@ -60,12 +60,12 @@ const Header = ({ scrollToSection }) => {
         >
           //Contact
         </div>
-        <img src="./assets/menu.svg" className="menu" alt="menu" />
+        <img src="./assets/icons/menu.svg" className="menu" alt="menu" />
       </div>
 
       {/* Mobile right navigation */}
       <nav className={`mob-right-nav ${isNavOpen ? "open-nav" : ""}`}>
-        <img src="./assets/close.svg" className="close" alt="close" />
+        <img src="./assets/icons/close.svg" className="close" alt="close" />
 
         <ul>
           <li >

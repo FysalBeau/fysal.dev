@@ -19,6 +19,8 @@
     border-radius: 1.875rem; /* 30px -> 1.875rem */
     box-shadow: 0.375rem 0.375rem 0.25rem #ee7772; /* 6px -> 0.375rem, 4px -> 0.25rem */
     margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    border: 1px black solid;
+
   }
 
   .project-details {
@@ -204,7 +206,7 @@
     position: absolute;
     border-radius: 1.875rem; /* 30px -> 1.875rem */
     object-fit: cover;
-    /* border: 1px black solid; */
+    border: 1px black solid;
   }
 
   .project-image-1 {
