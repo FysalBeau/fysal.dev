@@ -67,7 +67,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.1s ease, box-shadow 0.1s ease;
   }
 
   .project-button:active {
@@ -77,7 +76,6 @@
 
   .project-button-text {
     /* Add if necessary */
-    transition: background-color 0.1s ease, color 0.1s ease;
   }
 
   .project-button:active .project-button-text {

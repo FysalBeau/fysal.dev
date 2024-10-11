@@ -61,7 +61,6 @@
     border-radius: 0.3125rem; /* 5px -> 0.3125rem */
     margin-top: 0.625rem; /* 10px -> 0.625rem */
     height: 2.4375rem; /* 39px -> 2.4375rem */
-    transition: background-color 0.1s ease, border 0.1s ease;
   }
 
   .submit-button:active{
@@ -80,7 +79,6 @@
     width: 100%;
     height: 100%;
     font-family: "IBM Plex Mono", monospace;
-    transition: color 0.1s ease;
   }
 
   .submit-text:active {
