@@ -18,7 +18,7 @@ const Project = () => {
 
       <img
         className="project-image project-image-1"
-        src="./assets/images/project-image-1.jpg"
+        src="./assets/images/data-cap-graphic.png"
         alt="Project 1"
       />
 
@@ -50,7 +50,7 @@ const Project = () => {
 
       <img
         className="project-image project-image-2"
-        src="./assets/images/project-image-2.jpg"
+        src="./assets/images/mkrsunion-graphic.png"
         alt="Project 2"
       />
 

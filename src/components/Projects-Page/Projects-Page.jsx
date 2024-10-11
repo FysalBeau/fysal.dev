@@ -58,7 +58,7 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
+              src="./assets/images/data-cap-graphic.png"
               alt="Project 1"
             />
             <h3>
@@ -94,7 +94,7 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-2.jpg"
+              src="./assets/images/mkrsunion-graphic.png"
               alt="Project 2"
             />
             <h3>
@@ -129,7 +129,7 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
+              src="./assets/images/alphabody-graphic.png"
               alt="Project 3"
             />
             <h3>
@@ -161,8 +161,8 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
-              alt="Project 1"
+              src="./assets/images/vrtherapy-graphic.png"
+              alt="Project 4"
             />
             <h3>
               Created: Fall 2022{" "}
@@ -193,8 +193,8 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
-              alt="Project 1"
+              src="./assets/images/sarcasm-detection-graphic.png"
+              alt="Project 5"
             />
             <h3>
               Created: Winter 2023{" "}
@@ -225,8 +225,8 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
-              alt="Project 1"
+              src="./assets/images/tug-of-war-graphic.png"
+              alt="Project 6"
             />
             <h3>
               Created: Fall 2022{" "}
@@ -254,8 +254,8 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
-              alt="Project 1"
+              src="./assets/images/paper-crane-graphic.png"
+              alt="Project 7"
             />
             <h3>
               Created: Fall 2022{" "}
@@ -286,8 +286,8 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
-              alt="Project 1"
+              src="./assets/images/posture-alert-graphic.png"
+              alt="Project 8"
             />
             <h3>
               Created: Fall 2022{" "}
@@ -318,8 +318,8 @@ const ProjectsPage = () => {
           <div className="content">
             <img
               className="project1"
-              src="./assets/images/project-image-1.jpg"
-              alt="Project 1"
+              src="./assets/images/student-pressure-graphic.png"
+              alt="Project 9"
             />
             <h3>
               Created: Winter 2023{" "}
