@@ -4,11 +4,6 @@ body {
   color: #000;
 }
 
-.container{
-    font-family: "IBM Plex Mono", monospace;
-
-}
-
 h1 {
   color: black;
   text-align: center;
@@ -37,6 +32,7 @@ h1 {
   padding: 10px 20px;
   margin-top: 2px;
   font-size: 18px;
+  font-family: "IBM Plex Mono", monospace;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,4 +62,9 @@ h1 {
   transition: height 0.4s ease; /* Smooth height transition */
   height: 0;
   overflow: hidden;
+}
+.project1{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
 }
