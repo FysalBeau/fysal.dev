@@ -58,7 +58,24 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 20px;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease;
+
   }
+
+  .hero-button:active {
+    background-color: #ee7772;
+    box-shadow: 0px 0px 0px 0.1875rem #ee7772/* 3px -> 0.1875rem */
+}
+
+  .hero-button-text{
+    transition: background-color 0.1s ease, color 0.1s ease;
+  }
+
+  .hero-button-text:active{
+    background-color: #ee7772;
+    color:white;
+  }
+
 
   .profile-img {
     height: 17.625rem; /* 282px -> 17.625rem */
@@ -66,7 +83,6 @@
     object-fit: cover;
     border-radius: 180px;
     box-shadow: 0.375rem 0.375rem 0.25rem #f5bf44; /* 6px -> 0.375rem, 4px -> 0.25rem */
-    border: 1px solid black;
     margin-bottom: 3.125rem; /* 50px -> 3.125rem */
     align-self: center;
   }
@@ -108,8 +124,9 @@
 
   .main-title {
     position: absolute;
-    left: 1.875rem; /* 30px -> 1.875rem */
-    top: 10.0625rem; /* 161px -> 10.0625rem */
+    display: block;
+    left: 1.6000rem;
+    top: 10.900rem;
     color: #8298f5;
     font-size: 4.375rem; /* 70px -> 4.375rem */
     font-weight: 500;
@@ -141,8 +158,8 @@
 }
 
   .hero-button:hover {
-      background-color: #EE7772;
-      box-shadow: 0px 0px 0px 0.1875rem #EE7772 /* 3px -> 0.1875rem */
+      background-color: #ee7772;
+      box-shadow: 0px 0px 0px 0.1875rem #ee7772/* 3px -> 0.1875rem */
   }
 
   .hero-button-text {

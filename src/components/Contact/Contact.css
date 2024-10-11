@@ -1,3 +1,13 @@
+.form-input:focus{
+  outline: black 1px solid;
+}
+
+.form-textarea:focus{
+  outline: black 1px solid;
+}
+
+
+
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .contact-container {
@@ -21,6 +31,7 @@
     display: flex;
     flex-direction: column;
     width: 20.3125rem; /* 325px -> 20.3125rem */
+    margin-bottom: 1rem;
   }
 
   .form-label {
@@ -50,6 +61,12 @@
     border-radius: 0.3125rem; /* 5px -> 0.3125rem */
     margin-top: 0.625rem; /* 10px -> 0.625rem */
     height: 2.4375rem; /* 39px -> 2.4375rem */
+    transition: background-color 0.1s ease, border 0.1s ease;
+  }
+
+  .submit-button:active{
+    background-color: #ee7772;
+    border: 0.125rem solid #ee7772;
   }
 
   .submit-text {
@@ -63,6 +80,11 @@
     width: 100%;
     height: 100%;
     font-family: "IBM Plex Mono", monospace;
+    transition: color 0.1s ease;
+  }
+
+  .submit-text:active {
+    color: white;
   }
 
   .contact-info {
@@ -154,6 +176,12 @@
     box-sizing: border-box;
     border-radius: 0.3125rem; /* 5px -> 0.3125rem */
     margin-top: 1.875rem; /* 30px -> 1.875rem */
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+
+  .submit-button:hover{
+    background-color: #ee7772;
+    border: 0.125rem solid #ee7772;
   }
 
   .submit-text {
@@ -167,10 +195,11 @@
     width: 100%;
     height: 100%;
     font-family: "IBM Plex Mono", monospace;
+    transition: color 0.3s ease;
   }
 
   .submit-text:hover {
-    text-decoration: underline;
+    color: white;
   }
 
   .contact-info {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css";
 
 const images = [
@@ -9,14 +9,18 @@ const images = [
 
 const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState('fade-in'); // State for fade class
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3500); //Change image every 3.5 seconds
+      setFadeClass(''); // Remove fade class to start fade-out
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFadeClass('fade-in'); // Add fade class to start fade-in
+      }, 500); // Wait for fade-out duration before changing image
+    }, 4000); // Total time before next image (fade-out + fade-in)
 
-    return () => clearInterval(interval); // Clean up interbal on component unmount
-
+    return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
 
   return (
@@ -40,13 +44,13 @@ const About = () => {
           if I could just master biking to a coffee shop while coding... that
           would be the ultimate jam session! 🎧💻
         </span>
-        <br/>
+        <br />
         <span className="comment">
           <br></br>*/
         </span>
       </div>
       <img
-        className="about-image"
+        className={`about-image ${fadeClass}`} // Apply the fade class here
         src={images[currentImageIndex]}
         alt="Slideshow"
       />

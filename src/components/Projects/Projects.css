@@ -17,7 +17,6 @@
     width: 19.0625rem; /* 305px -> 19.0625rem */
     height: 11.875rem; /* 190px -> 11.875rem */
     border-radius: 1.875rem; /* 30px -> 1.875rem */
-    border: 0.0625rem solid black; /* 1px -> 0.0625rem */
     box-shadow: 0.375rem 0.375rem 0.25rem #ee7772; /* 6px -> 0.375rem, 4px -> 0.25rem */
     margin-bottom: 1.25rem; /* 20px -> 1.25rem */
   }
@@ -68,10 +67,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease;
   }
 
-  .button-text {
+  .project-button:active {
+    background-color: #ee7772;
+    box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
+  }
+
+  .project-button-text {
     /* Add if necessary */
+    transition: background-color 0.1s ease, color 0.1s ease;
+  }
+
+  .project-button:active .project-button-text {
+    background-color: #ee7772;
+    color: white;
   }
 
   .project-image-1,
@@ -175,8 +186,6 @@
     box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
   }
 
- 
-
   .project-button-text {
     width: 23rem; /* 368px -> 23rem */
     height: 2.5rem; /* 40px -> 2.5rem */
@@ -196,6 +205,8 @@
     height: 13.375rem; /* 214px -> 13.375rem */
     position: absolute;
     border-radius: 1.875rem; /* 30px -> 1.875rem */
+    object-fit: cover;
+    /* border: 1px black solid; */
   }
 
   .project-image-1 {
