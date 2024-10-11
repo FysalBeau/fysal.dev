@@ -66,10 +66,8 @@
     border: 2px solid #ee7772;
 }
 
-  .hero-button-text{
-  }
 
-  .hero-button-text:active{
+  .hero-button:active .hero-button-text{
     background-color: #ee7772;
     color:white;
   }
