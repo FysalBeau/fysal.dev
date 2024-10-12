@@ -1,14 +1,25 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Projects.css";
-import Modal from "../Modal/Modal"; 
+import Modal from "../Modal/Modal"; // Import Modal
 
 const Project = () => {
   const navigate = useNavigate(); // Create a navigate function
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
 
   // Handle redirection on click
   const handleRedirect = () => {
     navigate("/projects"); // Redirect to the second page
+  };
+
+  // Function to open the modal
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -25,28 +36,25 @@ const Project = () => {
 
       <div className="project-details project-1">
         <span className="comment-1">/*</span>
-        <br></br>
-        <br></br>
-        <span className="project-title">Data Science Capstone</span>    <img
+        <br />
+        <br />
+        <span className="project-title">Data Science Capstone</span>
+        <img
           className="project-1-redirect"
           src="./assets/icons/redirect.svg"
-          alt="Redirct"
+          alt="Redirect"
           onClick={handleRedirect}
-
         />
-        <br></br>
+        <br />
         <span className="project-created">Created: Winter 2023</span>
-        <br></br>
+        <br />
         <span className="project-description">
           Research paper diving deep into Debt as a Socioeconomic Determinant of
           Cancer Incidence
         </span>
-
-    
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <span className="comment-2">*/</span>
-     
       </div>
 
       <img
@@ -57,32 +65,34 @@ const Project = () => {
 
       <div className="project-details project-2">
         <span className="comment-3">/*</span>
-        <br></br>
-        <br></br>
-        <span className="project-title">Mkrs Union</span> <img
+        <br />
+        <br />
+        <span className="project-title">Mkrs Union</span>
+        <img
           className="project-1-redirect"
           src="./assets/icons/redirect.svg"
-          alt="Redirct"
+          alt="Redirect"
           onClick={handleRedirect}
         />
-        <br></br>
+        <br />
         <span className="project-created">Created: Winter 2022</span>
-        <br></br>
+        <br />
         <span className="project-description">
           Mkrs Union is a makerspace manager web app for the Taylor Family
           Digital Library Makerspace
         </span>
-       
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <span className="comment-4">*/</span>
-      
       </div>
 
-      {/* Clickable CTA that redirects to the second page */}
-      <div className="project-button" onClick={handleRedirect}>
+      {/* Clickable CTA that opens the modal instead of redirecting */}
+      <div className="project-button" onClick={handleOpenModal}>
         <div className="project-button-text">//Want to see all my projects?</div>
       </div>
+
+      {/* Render the Modal component and pass the close function */}
+      {isModalOpen && <Modal isOpen={isModalOpen} onClose={handleCloseModal} />}
     </div>
   );
 };

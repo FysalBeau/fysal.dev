@@ -1,39 +1,25 @@
-import React, { useState } from "react";
-import ReactModal from "react-modal";
-import "./Modal.css"; // Import the CSS file
+import React from 'react';
+import './Modal.css';
+import ProjectsPage from '../Projects-Page/Projects-Page';
 
-const Modal = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
+const Modal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
 
   return (
-    <div>
-      <button className="modal-trigger-button" onClick={handleOpenModal}>
-        Trigger Modal
-      </button>
-      <ReactModal
-        isOpen={showModal}
-        onRequestClose={handleCloseModal}
-        contentLabel="Full-Screen Modal Example"
-        className="modal-content"
-        overlayClassName="modal-overlay"
-      >
-        <button className="modal-close-button" onClick={handleCloseModal}>
+    <div className="modal-overlay">
+      <div className="modal-content">
+      
+
+        {/* Close button in the top-right corner */}
+        <button className="modal-close-button-right" onClick={onClose}>
           Close
         </button>
-        {/* Modal Content */}
+
         <div className="modal-body">
-          <h2>This is the modal content</h2>
-          <p>You can put any content here that fits within 95% of the screen.</p>
+          {/* Modal content goes here */}
+          <ProjectsPage/>
         </div>
-      </ReactModal>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom"; // Import the Link component
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import "./Projects-Page.css";
 
 const ProjectsPage = () => {
@@ -40,13 +38,12 @@ const ProjectsPage = () => {
 
   return (
     <div className="container">
-      <Header />
       <h1>Projects</h1>
 
       <div className="accordion-container">
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Data Science Capstone
               <img
                 src="./assets/icons/data-icon.svg"
@@ -89,7 +86,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               MkrsUnion
               <img
                 src="./assets/icons/mkrsunion-icon.svg"
@@ -131,7 +128,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Alphabody
               <img
                 src="./assets/icons/yoga-icon.svg"
@@ -170,7 +167,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            <span className="icon">
+            <span className="title">
               VR Therapy
               <img
                 src="./assets/icons/vr-icon.svg"
@@ -209,7 +206,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Sarcasm Detection in Social Media Text
               <img
                 src="./assets/icons/sarcasm-icon.svg"
@@ -248,7 +245,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Tug-Of-War
               <img
                 src="./assets/icons/tug-of-war-icon.svg"
@@ -284,7 +281,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Paper Crane - Screen Locker
               <img
                 src="./assets/icons/paper-crane-icon.svg"
@@ -323,7 +320,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Posture Alert
               <img
                 src="./assets/icons/posture-alert-icon.svg"
@@ -362,7 +359,7 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-          <span className="icon">
+          <span className="title">
               Student Pressure Levels Study 
               <img
                 src="./assets/icons/student-pressure-icon.svg"
@@ -399,10 +396,6 @@ const ProjectsPage = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <Footer />
     </div>
   );
 };
