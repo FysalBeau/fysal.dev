@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ProjectsPage from "./components/Projects-Page/Projects-Page"; // Import the projects page
 import "./index.css";
 
 const App = () => {
@@ -112,7 +113,8 @@ const App = () => {
             </div>
           }
         />
-
+        {/* Second Page Route */}
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
     </Router>
   );

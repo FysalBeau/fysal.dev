@@ -9,6 +9,10 @@ body {
     background-color: white;
 }
 
+.title{
+    color:black;
+}
+
 h1 {
   color: black;
   text-align: center;

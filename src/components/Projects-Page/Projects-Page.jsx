@@ -38,7 +38,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="container">
-      <h1>Projects</h1>
+      <h1>//Projects</h1>
 
       <div className="accordion-container">
         <div className="accordion">
