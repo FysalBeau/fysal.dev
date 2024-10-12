@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Projects.css";
+import Modal from "../Modal/Modal"; 
 
 const Project = () => {
   const navigate = useNavigate(); // Create a navigate function

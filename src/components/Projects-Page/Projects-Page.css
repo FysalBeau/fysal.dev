@@ -25,7 +25,9 @@ h1 {
   border: 1px solid transparent; /* Set a transparent border for smooth transitions */
 }
 
-
+.menu-icon{
+    padding-left:10px;
+}
 
 .menu-button {
   width: 100%;

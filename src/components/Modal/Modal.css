@@ -1,0 +1,65 @@
+/* Style for the button that opens the modal */
+.modal-trigger-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-trigger-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Modal content styling - 95% of the screen */
+  .modal-content {
+    background-color: white;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    outline: none;
+    overflow-y: auto;
+  }
+  
+  /* Modal overlay covers the entire screen */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Close button in the top-left corner */
+  .modal-close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .modal-close-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Modal body content */
+  .modal-body {
+    padding: 20px;
+    text-align: center;
+  }
+  

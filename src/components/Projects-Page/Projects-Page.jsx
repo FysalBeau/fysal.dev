@@ -46,7 +46,14 @@ const ProjectsPage = () => {
       <div className="accordion-container">
         <div className="accordion">
           <button className="menu-button">
-            Data Science Capstone
+          <span className="icon">
+              Data Science Capstone
+              <img
+                src="./assets/icons/data-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -82,7 +89,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            MkrsUnion
+          <span className="icon">
+              MkrsUnion
+              <img
+                src="./assets/icons/mkrsunion-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -117,7 +131,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            Alphabody
+          <span className="icon">
+              Alphabody
+              <img
+                src="./assets/icons/yoga-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -149,7 +170,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            VR Therapy
+            <span className="icon">
+              VR Therapy
+              <img
+                src="./assets/icons/vr-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -181,7 +209,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            Sarcasm Detection in Social Media Texts
+          <span className="icon">
+              Sarcasm Detection in Social Media Text
+              <img
+                src="./assets/icons/sarcasm-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -213,7 +248,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            Tug-Of-War
+          <span className="icon">
+              Tug-Of-War
+              <img
+                src="./assets/icons/tug-of-war-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -242,7 +284,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            Paper Crane - Screen Locker
+          <span className="icon">
+              Paper Crane - Screen Locker
+              <img
+                src="./assets/icons/paper-crane-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -274,7 +323,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            Posture Alert
+          <span className="icon">
+              Posture Alert
+              <img
+                src="./assets/icons/posture-alert-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
@@ -306,7 +362,14 @@ const ProjectsPage = () => {
 
         <div className="accordion">
           <button className="menu-button">
-            Student Pressure Levels Study
+          <span className="icon">
+              Student Pressure Levels Study 
+              <img
+                src="./assets/icons/student-pressure-icon.svg"
+                alt="icon"
+                className="menu-icon"
+              />
+            </span>
             <span className="icon">
               <img
                 src="./assets/icons/cross.svg"
