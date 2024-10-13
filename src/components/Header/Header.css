@@ -11,9 +11,12 @@
   }
 
   .menu {
-    margin-right: 0.25rem; /* 20px -> 1.25rem */
-    margin-top: 0.25rem; /* 20px -> 1.25rem */
+    margin-right: 5%;
+    margin-top: 5%; 
+    right: 0;
+    top: 0;
     position: fixed;
+    width: 8vw;
     max-width: calc(100vw - 0.5rem); /* Prevents margin overflow */
   }
 
@@ -24,7 +27,7 @@
     background: #ee7772;
     opacity: 95%;
     height: 100vh;
-    width: 50%;
+    width: 50vw;
     z-index: 2;
     transform: translateX(100%);
     will-change: transform; /* Optimize rendering */
@@ -37,7 +40,7 @@
     list-style-type: none;
     padding: 0;
     margin-top: 4rem; /* 4em remains unchanged */
-    width: 90%;
+    width: 90vw;
     max-width: 100vw; /* Prevents it from exceeding the viewport width
     overflow-x:hidden; */
   }
@@ -56,9 +59,9 @@
 
   .close {
     float: right;
-    margin-right: 0.25rem; /* 20px -> 1.25rem */
-    margin-top: 0.25rem; /* 20px -> 1.25rem */
-    width: 2.5rem; /* 2.5em -> 2.5rem */
+    margin-right: 5%;
+    margin-top: 5%; 
+    width: 8vw;
     background: #ee7772;
   }
 
@@ -84,11 +87,38 @@
     z-index: 2;
   }
 
-  .logo {
+  .logo-svg {
     cursor: pointer; /* Change cursor to pointer on hover */
     width: 3.125rem; /* 50px -> 3.125rem */
     height: auto;
     margin-right: 1.25rem; /* 20px -> 1.25rem */
+    transition: all 0.3s ease;
+  }
+  
+  .logo-circle {
+    transition: fill 0.3s ease;
+  }
+  
+  .path1,
+  .path2,
+  .path3 {
+    transition: fill 0.3s ease;
+  }
+  
+  .logo-container:hover .logo-circle {
+    fill: #ee7772 /* Change circle color on hover */
+  }
+  
+  .logo-container:hover .path1 {
+    fill: white; /* Change path1 color on hover */
+  }
+  
+  .logo-container:hover .path2 {
+    fill: white; /* Change path2 color on hover */
+  }
+  
+  .logo-container:hover .path3 {
+    fill: white; /* Change path3 color on hover */
   }
 
   .header {
