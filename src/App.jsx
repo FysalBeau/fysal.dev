@@ -18,17 +18,19 @@ const App = () => {
 
   // Added state for fade-in visibility
   const [isVisible, setIsVisible] = useState({
+    header:false,
     home: false,
     about: false,
     projects: false,
     contact: false,
+    footer:false,
   });
 
   useEffect(() => {
     const sections = document.querySelectorAll('.fade-in');
     
     const options = {
-      threshold: 0.5, // Trigger when 50% of the section is visible
+      threshold: 0.25, // Trigger when 25% of the section is visible
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -91,7 +93,7 @@ const App = () => {
           path="/"
           element={
             <div className="container">
-              <div className={`fade-in ${isVisible.home ? 'appear' : ''}`} data-section="header">
+              <div className={`fade-in ${isVisible.header? 'appear' : ''}`} data-section="header">
                 <Header scrollToSection={scrollToSection}/>
               </div>
               
@@ -107,7 +109,7 @@ const App = () => {
               <div ref={contactRef} className={`fade-in ${isVisible.contact ? 'appear' : ''}`} data-section="contact">
                 <Contact />
               </div>
-              <div className={`fade-in ${isVisible.contact ? 'appear' : ''}`} data-section="footer">
+              <div className={`fade-in ${isVisible.footer ? 'appear' : ''}`} data-section="footer">
                 <Footer />
               </div>
             </div>

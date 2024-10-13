@@ -356,45 +356,6 @@ const ProjectsPage = () => {
             </p>
           </div>
         </div>
-
-        <div className="accordion">
-          <button className="menu-button">
-          <span className="title">
-              Student Pressure Levels Study 
-              <img
-                src="./assets/icons/student-pressure-icon.svg"
-                alt="icon"
-                className="menu-icon"
-              />
-            </span>
-            <span className="icon">
-              <img
-                src="./assets/icons/cross.svg"
-                alt="cross"
-                className="cross-icon"
-              />
-            </span>
-          </button>
-          <div className="content">
-            <img
-              className="project1"
-              src="./assets/images/student-pressure-graphic.png"
-              alt="Project 9"
-            />
-            <h3>
-              Created: Winter 2023{" "}
-              <img
-                className="project-1-redirect"
-                src="./assets/icons/redirect.svg"
-                alt="Redirct"
-              />
-            </h3>{" "}
-            <p>
-              Exploring the daily routines and pressure levels of STAT423
-              Students in Winter 2023: A Survey-Based Study.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
