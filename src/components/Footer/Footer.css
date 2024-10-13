@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%; /* Ensure no overflow */
+    overflow-x: hidden;
   }
 
   /* Flexbox to center the icons horizontally */
@@ -25,14 +27,13 @@
 
   /* Footer text styling */
   .footer-text {
-    width: 24.125rem; /* 386px -> 24.125rem */
-    height: 2.8125rem; /* 45px -> 2.8125rem */
-    left: 0;
-    top: 3.3125rem; /* 53px -> 3.3125rem */
-    text-align: center;
-    font-size: 0.875rem; /* 14px -> 0.875rem */
-    font-weight: 500;
+    width: 100%;
+    max-width: 24.125rem;
+    height: auto;
     word-wrap: break-word;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    margin: 0 auto;
   }
 }
 
