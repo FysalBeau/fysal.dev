@@ -1,3 +1,19 @@
+
+/* Mobile View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .header-item,
@@ -70,8 +86,136 @@
   }
 }
 
-/* Styles for screens with min-width of 600px */
-@media only screen and (min-width: 600px) {
+
+/* Tablet View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 601px and max-width of 949px */
+@media only screen and (min-width: 601px) and (max-width: 949px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem; /* 10px -> 0.625rem */
+    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
+  }
+
+  /* Align logo to the top-left corner */
+  .logo-container {
+    position: fixed;
+    top: 34px;
+    left: 34px;
+    z-index: 2;
+  }
+
+  .logo-svg {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 32.5px;
+    height: auto;
+    margin-right: 1.25rem; /* 20px -> 1.25rem */
+    /* transition: all 0.3s ease; */
+  }
+  
+  .logo-circle {
+    transition: fill 0.3s ease;
+  }
+  
+  .path1,
+  .path2,
+  .path3 {
+    transition: fill 0.3s ease;
+  }
+  
+  .logo-container:hover .logo-circle {
+    fill: #ee7772 /* Change circle color on hover */
+  }
+  
+  .logo-container:hover .path1 {
+    fill: white; /* Change path1 color on hover */
+  }
+  
+  .logo-container:hover .path2 {
+    fill: white; /* Change path2 color on hover */
+  }
+  
+  .logo-container:hover .path3 {
+    fill: white; /* Change path3 color on hover */
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1; /* Ensures the header items center properly with logo on the left */
+  }
+
+  .header-item {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 15.6px;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    padding: 1.25rem; /* 20px -> 1.25rem */
+    transition: transform 0.3s ease;
+  }
+
+  .header-item:hover {
+    transform: translateY(-0.3125rem); /* 5px -> 0.3125rem */
+  }
+
+  .home {
+    color: #f5bf44;
+  }
+
+  .about {
+    color: #93caac;
+  }
+
+  .projects {
+    color: #ee7772;
+  }
+
+  .contact {
+    color: #b196e1;
+  }
+
+  .menu,
+  .mob-right-nav {
+    display: none;
+  }
+}
+
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 950px */
+@media only screen and (min-width: 950px) {
   .header-container {
     display: flex;
     align-items: center;
@@ -92,7 +236,7 @@
     width: 3.125rem; /* 50px -> 3.125rem */
     height: auto;
     margin-right: 1.25rem; /* 20px -> 1.25rem */
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
   }
   
   .logo-circle {

@@ -1,3 +1,18 @@
+/* Mobile View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .footer-container {
@@ -37,8 +52,80 @@
   }
 }
 
-/* Styles for screens with min-width of 600px */
-@media only screen and (min-width: 600px) {
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 601px and max-width 949px */
+@media only screen and (min-width: 601px) and (max-width:949px) {
+  /* Container to ensure the content is vertically centered in the viewport */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Flexbox to center the icons horizontally */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+
+  /* Styling for the individual icons */
+  .footer-icon {
+    width: 26px;
+    height: 26px;
+    margin: 0 13px;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-icon:hover {
+    transform: translateY(-0.3125rem); /* 5px -> 0.3125rem */
+  }
+
+  /* Footer text styling */
+  .footer-text {
+    color: black;
+    font-size: 10.4px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+  }
+}
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 950px */
+@media only screen and (min-width: 950px) {
   /* Container to ensure the content is vertically centered in the viewport */
   .footer-container {
     display: flex;

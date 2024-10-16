@@ -61,6 +61,22 @@
   font-weight: 400;
 }
 
+
+/* Mobile View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .about-container {
@@ -84,8 +100,132 @@
   }
 }
 
-/* Styles for screens with min-width of 600px */
-@media only screen and (min-width: 600px) {
+
+/* Tablet View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 601px and a max-width 949px */
+@media only screen and (min-width: 601px) and (max-width: 949px){
+  .about-container {
+    width: 36.725rem; /* 587.6px -> 36.725rem */
+    height: 22.506rem; /* 360.1px -> 22.506rem */
+    margin-bottom: 10rem; /* 160px */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .about-background {
+    width: 36.725rem; /* 587.6px -> 36.725rem */
+    height: 22.506rem; /* 360.1px -> 22.506rem */
+    position: absolute;
+    background: white;
+    box-shadow: 0.4875rem 0.4875rem 0.1625rem #93caac; /* 7.8px, 2.6px */    
+    border-radius: 1.21875rem; /* 19.5px -> 1.21875rem */
+    border: 0.08125rem solid black; /* 1.3px -> 0.08125rem */    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-header {
+
+  }
+
+  .about-title {
+    width: 12.6875rem; /* 203px */
+    font-size: 15.6px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    top: 72.8px;
+    left: 30.55px;
+  }
+
+  .comment {
+    font-size: 16.9px;
+    font-weight: 400; 
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.25rem; /* 20px */
+  }
+
+  #about-comment1{
+    position: absolute;
+    left: 30.55px;
+    top: 39.65px;
+    width:26.53px;
+    height:16.9px;
+    font-size: 16.9px;
+    font-weight: 400;
+  }
+
+  #about-comment2{
+    position: absolute;
+    font-size: 16.9px;
+    font-weight: 400;
+    top: 196px;
+    width:26.53px;
+    height:16.9px;
+  }
+
+  .about-content {
+    width: 300px;
+    height: 21.125rem; /* 338px */
+    position: absolute;
+    left: 30.55px;
+    top: 85.2px;
+    font-size: 10.79px;
+    line-height: 1.4;
+  }
+
+  .about-text {
+    font-size: 10.79px;
+    font-weight: 400;
+    color: black;
+    word-wrap: break-word;
+  }
+
+  .about-image {
+    width: 184.91px;
+    height: 269.75px;
+    position: absolute;
+    left: 365.3px;
+    top: 38.35px;
+  }
+}
+
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 950px */
+@media only screen and (min-width: 950px) {
   .about-container {
     width: 56.25rem; /* 900px */
     height: 34.375rem; /* 550px */
@@ -130,7 +270,7 @@
     height: 21.125rem; /* 338px */
     position: absolute;
     left: 2.8125rem; /* 45px */
-    top: 7.6875rem; /* 123px */
+    top: 8.4rem;
   }
 
   .about-text {

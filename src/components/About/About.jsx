@@ -27,7 +27,7 @@ const About = () => {
     <div className="about-container">
       <div className="about-background" />
       <div className="about-header">
-        <span className="comment">/*</span>
+        <span id="about-comment1" className="comment">/*</span>
         <span className="about-title">About Me</span>
       </div>
       <div className="about-content">
@@ -45,7 +45,7 @@ const About = () => {
           would be the ultimate jam session! 🎧💻
         </span>
         <br />
-        <span className="comment">
+        <span id="about-comment2" className="comment">
           <br></br>*/
         </span>
       </div>

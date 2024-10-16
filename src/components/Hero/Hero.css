@@ -1,3 +1,28 @@
+/* Base Styles (Common Across Viewports) */
+/* .hero-container,
+.hero-card,
+.profile-img,
+.hero-button {
+  transition: all 0.3s ease-in; 
+} 
+*/
+
+
+/* Mobile View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .hero-container {
@@ -24,7 +49,6 @@
   .bio,
   .role {
     font-size: 0.98rem; /* 16px -> 1rem */
-    word-wrap: break-word;
     font-weight: 400;
   }
 
@@ -84,8 +108,161 @@
   }
 }
 
-/* Styles for screens with min-width of 600px */
-@media only screen and (min-width: 600px) {
+/* Tablet View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 601px and max-width 949px */
+@media only screen and (min-width: 601px) and (max-width:949px) {
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem; /* 160px -> 10rem */
+  }
+
+  .hero-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 36.725rem; /* 587.6px / 16 */
+    height: 22.506rem; /* 360.1px / 16 */
+    background-color: white;
+    box-shadow: 0.4875rem 0.4875rem 0.1625rem #F5BF44; /* 7.8px, 2.6px */
+    border-radius: 1.21875rem; /* 19.5px / 16 */
+    border: 0.08125rem solid black; /* 1.3px / 16 */
+  }
+
+  .intro-text {
+    position: absolute;
+  }
+
+
+  #hero-comment1{
+    position: absolute;
+    left:20.53px;
+    top:48.9px;
+    width: 20.53px;
+    height: 16.9px;
+    font-size: 16.9px;
+    font-weight: 400px;
+  }
+
+  #hero-comment2{
+    position: absolute;
+    width: 20.53px;
+    height: 16.9px;
+    font-size: 16.9px;
+    font-weight: 400px;
+  }
+
+  .greeting{
+    position: absolute;
+    left: 21.45px;
+    top: 88.4px;
+    width: 91.47px;
+    height: 16.9px;
+  }
+  
+
+  .main-title {
+    position: absolute;
+    display: flex;
+    left: 17.93px;
+    top: 119.2px;
+    color: #8298f5;
+    font-size: 2.84375rem;  
+    font-weight: 500;
+  }
+
+  .description {
+    position: absolute;
+    left: 21.45px;
+    top: 173.55px;
+  }
+
+  .role {
+    color: #fd6237;
+    font-weight: 500;
+  }
+
+  .hero-button {
+    position: absolute;
+    left: 403.65px;
+    top: 267.15px;
+    width: 132.6px;
+    height: 36.4px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 0 0.121875rem black; /* 1.95px / 16 */
+    border-radius: 0.8125rem; /* 13px / 16 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+  .hero-button:hover {
+      background-color: #ee7772;
+      box-shadow: 0px 0px 0px 0.1875rem #ee7772/* 3px -> 0.1875rem */
+  }
+
+  .hero-button-text {
+    position: absolute;
+    left: 12.73px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 0.975rem; /* 15.6px / 16 */
+    font-weight: 500;
+    height: 2.275rem;
+    text-align: center;
+    line-height: 2.275rem;
+    transition: color 0.3s ease;
+  }
+
+  .hero-button-text:hover{
+    color:white;
+  }
+
+  .profile-img {
+    width: 12.795rem; /* 204.72px / 16 */
+    height: 12.1875rem; /* 195px / 16 */
+    position: absolute;
+    left: 367.25px;
+    top: 54.6px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 950px */
+@media only screen and (min-width: 950px) {
   .hero-container {
     
     margin-bottom: 10rem; /* 160px -> 10rem */

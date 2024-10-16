@@ -9,6 +9,21 @@
 
 
 
+/* Mobile View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .contact-container {
@@ -96,8 +111,163 @@
   }
 }
 
-/* Styles for screens with min-width of 600px */
-@media only screen and (min-width: 600px) {
+/* Tablet View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 601px and max-width 949px */
+@media only screen and (min-width: 601px) and (max-width: 949px){
+  .contact-container {
+    width: 587.6px;
+    height: 360.1px;
+    position: relative;
+    margin-bottom: 6.25rem; /* 100px -> 6.25rem */
+  }
+
+  .contact-background {
+    width: 587.6px;
+    height: 360.1px;
+    position: absolute;
+    background: white;
+    box-shadow: 7.8px 7.8px 2.6px #b196e1;
+    border-radius: 19.5px;    
+    border: 1.3px solid black;  
+  }
+
+  .contact-form {
+    width: 259.73px;
+    height: 311.35px;
+    position: absolute;
+    left: 266.5px;
+    top: 22.75px;
+  }
+
+  .form-field {
+    position: relative;
+  }
+
+  .form-label {
+    color: black;
+    font-size: 9.1px;
+    font-weight: 400;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    border: 1.3px solid black;    
+    border-radius: 3.25px;
+    padding: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
+  }
+
+  .email-field,
+  .message-field {
+  }
+
+  .form-input{
+
+  }
+  
+  .form-textarea {
+    height: 65px;
+    resize: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .submit-button {
+    width: 275.733px; 
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1.3px solid black;
+    box-sizing: border-box;
+    border-radius: 3.25px;    
+    transition: background-color 0.3s ease, border 0.3s ease;
+    left:1px;
+    position: relative;
+  }
+
+  .submit-button:hover{
+    background-color: #ee7772;
+    border: 0.125rem solid #ee7772;
+  }
+
+  .submit-text {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 9.1px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    transition: color 0.3s ease;
+  }
+
+  .submit-text:hover {
+    color: white;
+  }
+
+  .contact-info {
+    width: 17.75rem; /* 284px -> 17.75rem */
+    height: 14.9375rem; /* 239px -> 14.9375rem */
+    position: absolute;
+    left: 48.75px;
+    top: 98.15px;
+  }
+
+  .comment {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16.9px;
+    font-weight: 400;
+  }
+
+  .info-header {
+    color: black;
+    font-size: 16.9px;
+    font-weight: 500;
+  }
+
+  .info-text {
+    color: black;
+    font-size: 14.3px;
+    font-weight: 400;
+  }
+}
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 950px */
+@media only screen and (min-width: 950px) {
   .contact-container {
     width: 56.25rem; /* 900px -> 56.25rem */
     height: 34.375rem; /* 550px -> 34.375rem */

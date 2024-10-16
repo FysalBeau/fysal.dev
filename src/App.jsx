@@ -18,32 +18,32 @@ const App = () => {
 
   // Added state for fade-in visibility
   const [isVisible, setIsVisible] = useState({
-    header:false,
+    header: false,
     home: false,
     about: false,
     projects: false,
     contact: false,
-    footer:false,
+    footer: false,
   });
 
   useEffect(() => {
-    const sections = document.querySelectorAll('.fade-in');
-    
+    const sections = document.querySelectorAll(".fade-in");
+
     const options = {
       threshold: 0.25, // Trigger when 25% of the section is visible
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const sectionName = entry.target.dataset.section; // Get section name from data attribute
-          setIsVisible(prevState => ({ ...prevState, [sectionName]: true })); // Update state
+          setIsVisible((prevState) => ({ ...prevState, [sectionName]: true })); // Update state
           observer.unobserve(entry.target); // Stop observing once it's visible
         }
       });
     }, options);
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       observer.observe(section);
     });
 
@@ -93,23 +93,51 @@ const App = () => {
           path="/"
           element={
             <div className="container">
-              <div className={`fade-in ${isVisible.header? 'appear' : ''}`} data-section="header">
-                <Header scrollToSection={scrollToSection}/>
+              <div
+                id="header"
+                className={`fade-in ${isVisible.header ? "appear" : ""}`}
+                data-section="header"
+              >
+                <Header scrollToSection={scrollToSection} />
               </div>
-              
-              <div ref={homeRef} className={`fade-in ${isVisible.home ? 'appear' : ''}`} data-section="home">
+
+              <div
+                id="hero"
+                ref={homeRef}
+                className={`fade-in ${isVisible.home ? "appear" : ""}`}
+                data-section="home"
+              >
                 <Hero scrollToSection={scrollToSection} />
               </div>
-              <div ref={aboutRef} className={`fade-in ${isVisible.about ? 'appear' : ''}`} data-section="about">
+              <div
+                id="about"
+                ref={aboutRef}
+                className={`fade-in ${isVisible.about ? "appear" : ""}`}
+                data-section="about"
+              >
                 <About />
               </div>
-              <div ref={projectsRef} className={`fade-in ${isVisible.projects ? 'appear' : ''}`} data-section="projects">
+              <div
+                id="projects"
+                ref={projectsRef}
+                className={`fade-in ${isVisible.projects ? "appear" : ""}`}
+                data-section="projects"
+              >
                 <Projects />
               </div>
-              <div ref={contactRef} className={`fade-in ${isVisible.contact ? 'appear' : ''}`} data-section="contact">
+              <div
+                id="contact"
+                ref={contactRef}
+                className={`fade-in ${isVisible.contact ? "appear" : ""}`}
+                data-section="contact"
+              >
                 <Contact />
               </div>
-              <div className={`fade-in ${isVisible.footer ? 'appear' : ''}`} data-section="footer">
+              <div
+                id="footer"
+                className={`fade-in ${isVisible.footer ? "appear" : ""}`}
+                data-section="footer"
+              >
                 <Footer />
               </div>
             </div>

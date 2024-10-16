@@ -8,7 +8,7 @@ const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
       <div className="hero-card">
         {/* Intro Text */}
         <div className="intro-text">
-          <span className="comment">/*</span>
+          <span id="hero-comment1" className="comment">/*</span>
 
           <br></br>
           <br></br>
@@ -29,7 +29,7 @@ const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
           </span>
           <br></br>
           <br></br>
-          <span className="comment">*/</span>
+          <span id="hero-comment2" className="comment">*/</span>
         </div>
 
         {/* Image */}

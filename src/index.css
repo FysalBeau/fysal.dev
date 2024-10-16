@@ -6,6 +6,16 @@ body {
   justify-content: center;
 }
 
+#about{
+  display: flex;
+  justify-content: center;
+}
+
+#projects{
+  display: flex;
+  justify-content: center;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s ease-in;
@@ -20,7 +30,7 @@ body {
     background: white;
   }
 }
-@media only screen and (min-width:600px){
+@media only screen and (min-width:601px){
   body{
     background: #e2eee7;
     background-size: 50px 50px;

@@ -36,8 +36,8 @@ const Project = () => {
 
       <div className="project-details project-1">
         <span className="comment-1">/*</span>
-        <br />
-        <br />
+        <br className="break"/>
+        <br className="break"/>
         <span className="project-title">Data Science Capstone</span>
         <img
           className="project-1-redirect"

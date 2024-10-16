@@ -1,3 +1,18 @@
+/* Mobile View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .project-container {
@@ -80,8 +95,197 @@
   }
 
 }
-/* Styles for screens with min-width of 600px */
-@media only screen and (min-width: 600px) {
+
+/* Tablet View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 601px and max-width 949px */
+@media only screen and (min-width: 601px) and (max-width:949px) {
+  .project-container {
+    width: 587.6px;
+    height: 360.1px;
+    position: relative;
+    margin-bottom: 10rem; /* 160px -> 10rem */
+  }
+
+  .project-background {
+    width: 587.6px;
+    height: 360.1px;
+    position: absolute;
+    background: white;
+    box-shadow: 7.8px 7.8px 2.6px #ee7772;
+    border-radius: 19.5px;
+    border: 1.3px solid black;
+  }
+
+  .projects-header {
+    height: 16.9px;
+    position: absolute;
+    left:35.1px;
+    top:14.3px;
+    color: black;
+    font-size: 16.9px;
+    font-weight: 500;
+
+  }
+
+  .project-details {
+    width: 230.83px;
+    height: 150px;
+    position: absolute;
+    font-weight: 500;
+    word-wrap: break-word;
+    line-height: 10.4px;
+  }
+
+  .project-1 {
+    left: 35.1px;
+    top: 195.8px;
+  }
+
+  .project-2 {
+    left: 321.75px;
+    top: 192.2px;
+  }
+
+  .project-title {
+    color: black;
+    font-size: 10.4px;
+    font-weight: 600;
+  }
+
+  .project-created {
+    color: black;
+    font-size: 9.1px;
+    font-weight: 500;
+  }
+
+  .project-description {
+    color: black;
+    font-size:7.8px;
+    font-weight: 100;
+  }
+
+  .comment-1,
+  .comment-2,
+  .comment-3,
+  .comment-4 {
+    font-size:10.4px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .comment-1{
+    left:35.1px;
+    top:189.8px;
+
+  }
+  .comment-2{
+    left:35.1px;
+    top:282.1px;
+  }
+  .comment-3,
+  .comment-4 {
+    font-size:10.4px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .project-button {
+    width: 270.4px;
+    height: 36.4px;
+    position: absolute;
+    left: 156.65px;
+    top: 301.6px;
+    background: white;
+    box-shadow: 0px 0px 0px 1.95px black;    
+    border-radius: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5px;f
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .project-button:hover {
+    background-color: #ee7772;
+    box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
+  }
+
+  .project-button-text {
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    align-content: center;
+    transition: color 0.3s ease;
+  }
+
+  .project-button:hover .project-button-text {
+    color: white;
+  }
+
+  .project-image {
+    width: 228.8px;
+    height: 140.4px;
+    position: absolute;
+    border-radius: 19.5px;
+    object-fit: cover;
+    border: 0.65px solid black;
+  }
+
+  .project-image-1 {
+    left: 35.1px;
+    top: 46.15px;
+  }
+
+  .project-image-2 {
+    left: 321.75px;
+    top: 46.15px;
+  }
+
+  .project-1-redirect,
+  .project-2-redirect {
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .project-1-redirect:hover,
+  .project-2-redirect:hover {
+    transform: translateY(-0.3125rem); /* 5px -> 0.3125rem */
+  }
+}
+
+/* Desktop View */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/*             */
+/* Styles for screens with min-width of 950px */
+@media only screen and (min-width: 950px) {
   .project-container {
     width: 56.25rem; /* 900px -> 56.25rem */
     height: 34.375rem; /* 550px -> 34.375rem */
@@ -210,6 +414,7 @@
 
   .project-1-redirect,
   .project-2-redirect {
+    margin-left: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
   }
