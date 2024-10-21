@@ -1,0 +1,77 @@
+body {
+  background: #e2eee7;
+  font-family: "IBM Plex Mono", monospace;
+  color: #000;
+}
+
+.project1-redirect {
+  background-color: white;
+}
+
+.title {
+  color: black;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.accordion-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion {
+  border: 1px solid transparent; /* Set a transparent border for smooth transitions */
+}
+
+.menu-icon {
+  padding-left: 10px;
+}
+
+.menu-button {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 2px;
+  font-size: 18px;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  outline: none; /* Remove outline for better aesthetics */
+}
+
+.menu-button:hover {
+  background-color: #f0f0f0; /* Slight change on hover for better visibility */
+}
+
+.icon {
+  font-size: 20px;
+  transition: transform 0.4s; /* Apply transition to the transform property */
+}
+
+.menu-button.open .icon {
+  transform: rotate(45deg);
+}
+
+.content {
+  padding: 0 20px;
+  background-color: white;
+  transition: height 0.4s ease; /* Smooth height transition */
+  height: 0;
+  overflow: hidden;
+}
+.project1 {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border: 1px black solid;
+  margin-top: 10px;
+}

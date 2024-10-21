@@ -9,7 +9,7 @@ const Project = () => {
 
   // Handle redirection on click
   const handleRedirect = () => {
-    navigate("/projects"); // Redirect to the second page
+    navigate("/"); // Redirect to the second page
   };
 
   // Function to open the modal
@@ -36,8 +36,8 @@ const Project = () => {
 
       <div className="project-details project-1">
         <span className="comment-1">/*</span>
-        <br className="break"/>
-        <br className="break"/>
+        <br className="break" />
+        <br className="break" />
         <span className="project-title">Data Science Capstone</span>
         <img
           className="project-1-redirect"
@@ -88,7 +88,9 @@ const Project = () => {
 
       {/* Clickable CTA that opens the modal instead of redirecting */}
       <div className="project-button" onClick={handleOpenModal}>
-        <div className="project-button-text">//Want to see all my projects?</div>
+        <div className="project-button-text">
+          //Want to see all my projects?
+        </div>
       </div>
 
       {/* Render the Modal component and pass the close function */}

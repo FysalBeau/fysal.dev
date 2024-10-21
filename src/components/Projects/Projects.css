@@ -35,10 +35,8 @@
     box-shadow: 0.375rem 0.375rem 0.25rem #ee7772; /* 6px -> 0.375rem, 4px -> 0.25rem */
     margin-bottom: 1.25rem; /* 20px -> 1.25rem */
     border: 1px black solid;
-
   }
 
- 
   .project-1,
   .project-2 {
     margin-bottom: 3.125rem; /* 50px -> 3.125rem */
@@ -88,12 +86,10 @@
     box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
   }
 
-
   .project-button:active .project-button-text {
     background-color: #ee7772;
     color: white;
   }
-
 }
 
 /* Tablet View */
@@ -112,7 +108,7 @@
 /*             */
 /*             */
 /* Styles for screens with min-width of 601px and max-width 949px */
-@media only screen and (min-width: 601px) and (max-width:949px) {
+@media only screen and (min-width: 601px) and (max-width: 949px) {
   .project-container {
     width: 587.6px;
     height: 360.1px;
@@ -133,12 +129,11 @@
   .projects-header {
     height: 16.9px;
     position: absolute;
-    left:35.1px;
-    top:14.3px;
+    left: 35.1px;
+    top: 14.3px;
     color: black;
     font-size: 16.9px;
     font-weight: 500;
-
   }
 
   .project-details {
@@ -174,7 +169,7 @@
 
   .project-description {
     color: black;
-    font-size:7.8px;
+    font-size: 7.8px;
     font-weight: 100;
   }
 
@@ -182,21 +177,20 @@
   .comment-2,
   .comment-3,
   .comment-4 {
-    font-size:10.4px;
+    font-size: 10.4px;
     color: rgba(0, 0, 0, 0.5);
   }
-  .comment-1{
-    left:35.1px;
-    top:189.8px;
-
+  .comment-1 {
+    left: 35.1px;
+    top: 189.8px;
   }
-  .comment-2{
-    left:35.1px;
-    top:282.1px;
+  .comment-2 {
+    left: 35.1px;
+    top: 282.1px;
   }
   .comment-3,
   .comment-4 {
-    font-size:10.4px;
+    font-size: 10.4px;
     color: rgba(0, 0, 0, 0.5);
   }
 
@@ -207,13 +201,13 @@
     left: 156.65px;
     top: 301.6px;
     background: white;
-    box-shadow: 0px 0px 0px 1.95px black;    
+    box-shadow: 0px 0px 0px 1.95px black;
     border-radius: 13px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 5px;f
+    margin-top: 5px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
   }

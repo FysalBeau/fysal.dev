@@ -1,6 +1,6 @@
-import React from 'react';
-import './Modal.css';
-import ProjectsPage from '../Projects-Page/Projects-Page';
+import React from "react";
+import "./Modal.css";
+import ProjectsPage from "../Portfolio/Portfolio";
 
 const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -8,8 +8,6 @@ const Modal = ({ isOpen, onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-      
-
         {/* Close button in the top-right corner */}
         <button className="modal-close-button-right" onClick={onClose}>
           Close
@@ -17,7 +15,7 @@ const Modal = ({ isOpen, onClose }) => {
 
         <div className="modal-body">
           {/* Modal content goes here */}
-          <ProjectsPage/>
+          <ProjectsPage />
         </div>
       </div>
     </div>

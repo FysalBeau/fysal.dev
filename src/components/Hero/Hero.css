@@ -7,7 +7,6 @@
 } 
 */
 
-
 /* Mobile View */
 /*             */
 /*             */
@@ -82,20 +81,17 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 20px;
-
   }
 
   .hero-button:active {
     background-color: #ee7772;
     border: 2px solid #ee7772;
-}
-
-
-  .hero-button:active .hero-button-text{
-    background-color: #ee7772;
-    color:white;
   }
 
+  .hero-button:active .hero-button-text {
+    background-color: #ee7772;
+    color: white;
+  }
 
   .profile-img {
     height: 17.625rem; /* 282px -> 17.625rem */
@@ -124,7 +120,7 @@
 /*             */
 /*             */
 /* Styles for screens with min-width of 601px and max-width 949px */
-@media only screen and (min-width: 601px) and (max-width:949px) {
+@media only screen and (min-width: 601px) and (max-width: 949px) {
   .hero-container {
     display: flex;
     justify-content: center;
@@ -140,7 +136,7 @@
     width: 36.725rem; /* 587.6px / 16 */
     height: 22.506rem; /* 360.1px / 16 */
     background-color: white;
-    box-shadow: 0.4875rem 0.4875rem 0.1625rem #F5BF44; /* 7.8px, 2.6px */
+    box-shadow: 0.4875rem 0.4875rem 0.1625rem #f5bf44; /* 7.8px, 2.6px */
     border-radius: 1.21875rem; /* 19.5px / 16 */
     border: 0.08125rem solid black; /* 1.3px / 16 */
   }
@@ -149,18 +145,17 @@
     position: absolute;
   }
 
-
-  #hero-comment1{
+  #hero-comment1 {
     position: absolute;
-    left:20.53px;
-    top:48.9px;
+    left: 20.53px;
+    top: 48.9px;
     width: 20.53px;
     height: 16.9px;
     font-size: 16.9px;
     font-weight: 400px;
   }
 
-  #hero-comment2{
+  #hero-comment2 {
     position: absolute;
     width: 20.53px;
     height: 16.9px;
@@ -168,14 +163,13 @@
     font-weight: 400px;
   }
 
-  .greeting{
+  .greeting {
     position: absolute;
     left: 21.45px;
     top: 88.4px;
     width: 91.47px;
     height: 16.9px;
   }
-  
 
   .main-title {
     position: absolute;
@@ -183,7 +177,7 @@
     left: 17.93px;
     top: 119.2px;
     color: #8298f5;
-    font-size: 2.84375rem;  
+    font-size: 2.84375rem;
     font-weight: 500;
   }
 
@@ -210,11 +204,11 @@
     border-radius: 0.8125rem; /* 13px / 16 */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-}
+  }
 
   .hero-button:hover {
-      background-color: #ee7772;
-      box-shadow: 0px 0px 0px 0.1875rem #ee7772/* 3px -> 0.1875rem */
+    background-color: #ee7772;
+    box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
   }
 
   .hero-button-text {
@@ -231,8 +225,8 @@
     transition: color 0.3s ease;
   }
 
-  .hero-button-text:hover{
-    color:white;
+  .hero-button-text:hover {
+    color: white;
   }
 
   .profile-img {
@@ -264,7 +258,6 @@
 /* Styles for screens with min-width of 950px */
 @media only screen and (min-width: 950px) {
   .hero-container {
-    
     margin-bottom: 10rem; /* 160px -> 10rem */
   }
 
@@ -298,8 +291,8 @@
   .main-title {
     position: absolute;
     display: block;
-    left: 1.6000rem;
-    top: 10.900rem;
+    left: 1.6rem;
+    top: 10.9rem;
     color: #8298f5;
     font-size: 4.375rem; /* 70px -> 4.375rem */
     font-weight: 500;
@@ -328,11 +321,11 @@
     border-radius: 1.25rem; /* 20px -> 1.25rem */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-}
+  }
 
   .hero-button:hover {
-      background-color: #ee7772;
-      box-shadow: 0px 0px 0px 0.1875rem #ee7772/* 3px -> 0.1875rem */
+    background-color: #ee7772;
+    box-shadow: 0px 0px 0px 0.1875rem #ee7772; /* 3px -> 0.1875rem */
   }
 
   .hero-button-text {
@@ -350,8 +343,8 @@
     transition: color 0.3s ease;
   }
 
-  .hero-button-text:hover{
-    color:white;
+  .hero-button-text:hover {
+    color: white;
   }
 
   .profile-img {

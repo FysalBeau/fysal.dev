@@ -52,7 +52,6 @@
   }
 }
 
-
 /* Desktop View */
 /*             */
 /*             */
@@ -69,7 +68,7 @@
 /*             */
 /*             */
 /* Styles for screens with min-width of 601px and max-width 949px */
-@media only screen and (min-width: 601px) and (max-width:949px) {
+@media only screen and (min-width: 601px) and (max-width: 949px) {
   /* Container to ensure the content is vertically centered in the viewport */
   .footer-container {
     display: flex;

@@ -1,13 +1,10 @@
-.form-input:focus{
+.form-input:focus {
   outline: black 1px solid;
 }
 
-.form-textarea:focus{
+.form-textarea:focus {
   outline: black 1px solid;
 }
-
-
-
 
 /* Mobile View */
 /*             */
@@ -71,7 +68,7 @@
     height: 2.4375rem; /* 39px -> 2.4375rem */
   }
 
-  .submit-button:active{
+  .submit-button:active {
     background-color: #ee7772;
     border: 0.125rem solid #ee7772;
   }
@@ -98,7 +95,6 @@
     height: 8.75rem; /* 140px -> 8.75rem */
     margin-bottom: 3.125rem; /* 50px -> 3.125rem */
   }
-
 
   .info-header {
     font-weight: 600;
@@ -127,7 +123,7 @@
 /*             */
 /*             */
 /* Styles for screens with min-width of 601px and max-width 949px */
-@media only screen and (min-width: 601px) and (max-width: 949px){
+@media only screen and (min-width: 601px) and (max-width: 949px) {
   .contact-container {
     width: 587.6px;
     height: 360.1px;
@@ -141,8 +137,8 @@
     position: absolute;
     background: white;
     box-shadow: 7.8px 7.8px 2.6px #b196e1;
-    border-radius: 19.5px;    
-    border: 1.3px solid black;  
+    border-radius: 19.5px;
+    border: 1.3px solid black;
   }
 
   .contact-form {
@@ -150,7 +146,7 @@
     height: 311.35px;
     position: absolute;
     left: 266.5px;
-    top: 22.75px;
+    top: 30.75px;
   }
 
   .form-field {
@@ -166,19 +162,11 @@
   .form-input,
   .form-textarea {
     width: 100%;
-    border: 1.3px solid black;    
+    border: 1.3px solid black;
     border-radius: 3.25px;
     padding: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
   }
 
-  .email-field,
-  .message-field {
-  }
-
-  .form-input{
-
-  }
-  
   .form-textarea {
     height: 65px;
     resize: none;
@@ -187,7 +175,7 @@
   }
 
   .submit-button {
-    width: 275.733px; 
+    width: 275.733px;
     height: 26px;
     display: flex;
     justify-content: center;
@@ -195,13 +183,13 @@
     margin-top: 20px;
     border: 1.3px solid black;
     box-sizing: border-box;
-    border-radius: 3.25px;    
+    border-radius: 3.25px;
     transition: background-color 0.3s ease, border 0.3s ease;
-    left:1px;
+    left: 1px;
     position: relative;
   }
 
-  .submit-button:hover{
+  .submit-button:hover {
     background-color: #ee7772;
     border: 0.125rem solid #ee7772;
   }
@@ -337,7 +325,7 @@
     transition: background-color 0.3s ease, border 0.3s ease;
   }
 
-  .submit-button:hover{
+  .submit-button:hover {
     background-color: #ee7772;
     border: 0.125rem solid #ee7772;
   }

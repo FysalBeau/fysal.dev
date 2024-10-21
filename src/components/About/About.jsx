@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 
 const images = [
-  './assets/images/about-image-1.jpg',
-  './assets/images/about-image-2.jpg',
-  './assets/images/about-image-3.jpg'
+  "./assets/images/about-image-1.jpg",
+  "./assets/images/about-image-2.jpg",
+  "./assets/images/about-image-3.jpg",
 ];
 
 const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [fadeClass, setFadeClass] = useState('fade-in'); // State for fade class
+  const [fadeClass, setFadeClass] = useState("fade-in"); // State for fade class
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFadeClass(''); // Remove fade class to start fade-out
+      setFadeClass(""); // Remove fade class to start fade-out
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setFadeClass('fade-in'); // Add fade class to start fade-in
+        setFadeClass("fade-in"); // Add fade class to start fade-in
       }, 500); // Wait for fade-out duration before changing image
     }, 4000); // Total time before next image (fade-out + fade-in)
 
@@ -27,7 +27,9 @@ const About = () => {
     <div className="about-container">
       <div className="about-background" />
       <div className="about-header">
-        <span id="about-comment1" className="comment">/*</span>
+        <span id="about-comment1" className="comment">
+          /*
+        </span>
         <span className="about-title">About Me</span>
       </div>
       <div className="about-content">

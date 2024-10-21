@@ -1,14 +1,17 @@
 import React from "react";
 import "./Hero.css"; // Import the CSS file
 
-const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
+const Hero = ({ scrollToSection }) => {
+  //Recieve the scrollToSection prop
   return (
     <div className="hero-container">
       {/* Background Card */}
       <div className="hero-card">
         {/* Intro Text */}
         <div className="intro-text">
-          <span id="hero-comment1" className="comment">/*</span>
+          <span id="hero-comment1" className="comment">
+            /*
+          </span>
 
           <br></br>
           <br></br>
@@ -29,7 +32,9 @@ const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
           </span>
           <br></br>
           <br></br>
-          <span id="hero-comment2" className="comment">*/</span>
+          <span id="hero-comment2" className="comment">
+            */
+          </span>
         </div>
 
         {/* Image */}
@@ -40,7 +45,7 @@ const Hero = ({ scrollToSection }) => { //Recieve the scrollToSection prop
         />
 
         {/* Contact Button */}
-        <div className="hero-button" onClick={() => scrollToSection('contact')}>
+        <div className="hero-button" onClick={() => scrollToSection("contact")}>
           <div className="hero-button-text">//Contact Me</div>
         </div>
       </div>

@@ -6,12 +6,12 @@ body {
   justify-content: center;
 }
 
-#about{
+#about {
   display: flex;
   justify-content: center;
 }
 
-#projects{
+#projects {
   display: flex;
   justify-content: center;
 }
@@ -26,12 +26,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  body{
+  body {
     background: white;
   }
 }
-@media only screen and (min-width:601px){
-  body{
+@media only screen and (min-width: 601px) {
+  body {
     background: #e2eee7;
     background-size: 50px 50px;
     background-image: linear-gradient(to right, white 2px, transparent 1px),
