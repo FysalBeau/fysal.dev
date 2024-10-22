@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from "react"; // Added useState
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
+import React, { useEffect, useRef, useState } from "react"; // Added useState 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
+import Header from "./components/Header/Header"; 
+import Hero from "./components/Hero/Hero"; 
+import About from "./components/About/About"; 
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import ProjectsPage from "./components/Portfolio/Portfolio"; // Import the projects page
+import ProjectsPage from "./components/Portfolio/Portfolio"; 
 import "./index.css";
 
 const App = () => {
