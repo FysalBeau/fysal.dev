@@ -44,11 +44,11 @@ jobs:
         
       - name: Create CNAME file
         run:  |
-          echo "fysal.dev" > ./dist/CNAME
+          echo "${{ secrets.CNAME }}" > ./dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: fysal.dev
+          cname: ${{ secrets.CNAME }}
