@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-// import defaultLogo from "/assets/icons/logo-default.svg";
-// import hoverLogo from "/assets/icons/logo-hover.svg";
 
 const Header = ({ scrollToSection }) => {
-  // const [logoSrc, setLogoSrc] = useState(defaultLogo);
   const [isNavOpen, setIsNavOpen] = useState(false); // State to manage the mobile nav visibility
 
   useEffect(() => {
@@ -29,8 +26,6 @@ const Header = ({ scrollToSection }) => {
     <div className="header-container">
       <div
         className="logo-container"
-        // onMouseEnter={() => setLogoSrc(hoverLogo)}
-        // onMouseLeave={() => setLogoSrc(defaultLogo)}
         onClick={() => scrollToSection("home")}
       >
         <svg

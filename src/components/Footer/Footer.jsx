@@ -40,7 +40,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer-text">
-        // © 2024 Fysal Beauferris. All Rights Reserved.
+        // © {new Date().getFullYear()} Fysal Beauferris. All Rights Reserved.
       </div>
     </div>
   );

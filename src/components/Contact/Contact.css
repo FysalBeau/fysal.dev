@@ -1,26 +1,18 @@
-.form-input:focus {
-  outline: black 1px solid;
+.submit-text{
+  font-family: "IBM Plex Mono", monospace;
 }
 
+/* Focus styles */
+.form-input:focus,
 .form-textarea:focus {
   outline: black 1px solid;
 }
 
+.form-textarea {
+  resize: none;
+}
+
 /* Mobile View */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .contact-container {
@@ -47,7 +39,6 @@
   .form-textarea {
     border: 0.125rem solid black; /* 2px -> 0.125rem */
     border-radius: 0.3125rem; /* 5px -> 0.3125rem */
-    resize: none;
   }
 
   .form-input {
@@ -83,7 +74,6 @@
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "IBM Plex Mono", monospace;
   }
 
   .submit-text:active {
@@ -108,20 +98,6 @@
 }
 
 /* Tablet View */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
 /* Styles for screens with min-width of 601px and max-width 949px */
 @media only screen and (min-width: 601px) and (max-width: 949px) {
   .contact-container {
@@ -164,12 +140,11 @@
     width: 100%;
     border: 1.3px solid black;
     border-radius: 3.25px;
-    padding: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
+    padding: 0.5rem; /*   10px -> 0.5rem */
   }
 
   .form-textarea {
     height: 65px;
-    resize: none;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -204,7 +179,6 @@
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "IBM Plex Mono", monospace;
     transition: color 0.3s ease;
   }
 
@@ -240,20 +214,6 @@
 }
 
 /* Desktop View */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
 /* Styles for screens with min-width of 950px */
 @media only screen and (min-width: 950px) {
   .contact-container {
@@ -275,7 +235,7 @@
 
   .contact-form {
     width: 24.975rem; /* 399.59px -> 24.975rem */
-    height: 18.95rem; /* Calc reduction 379px -> 18.95rem */
+    height: 18.95rem; /* 379px -> 18.95rem */
     position: absolute;
     left: 25.625rem; /* 410px -> 25.625rem */
     top: 2.1875rem; /* 35px -> 2.1875rem */
@@ -283,41 +243,40 @@
 
   .form-field {
     position: relative;
-    margin-bottom: 1rem; /* 20px -> 1rem (20% reduced calc) */
+    margin-bottom: 1rem; /* 20px -> 1rem */
   }
 
   .form-label {
     color: black;
-    font-size: 0.875rem; /* Calc reduction: 16px -> 0.875rem */
+    font-size: 0.875rem; /* 16px -> 0.875rem */
     font-weight: 400;
   }
 
   .form-input,
   .form-textarea {
     width: 100%;
-    height: 2.4375rem; /* Calc reduction: 39px -> 2.4375rem */
+    height: 2.4375rem; /* 39px -> 2.4375rem */
     border: 0.125rem solid black; /* 2px -> 0.125rem */
     border-radius: 0.3125rem; /* 5px -> 0.3125rem */
-    padding: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
+    padding: 0.5rem; /* 10px -> 0.5rem */
   }
 
   .email-field,
   .message-field {
-    margin-top: 0.5rem; /* Calc reduction: 10px -> 0.5rem */
+    margin-top: 0.5rem; /* 10px -> 0.5rem */
   }
 
   .form-textarea {
-    height: 5rem; /* Calc reduction: 100px -> 5rem */
-    resize: none;
+    height: 5rem; /* 100px -> 5rem */
   }
 
   .submit-button {
     width: 26.0625rem; /* 417px -> 26.0625rem */
-    height: 2.5rem; /* Calc reduction: 50px -> 2.5rem */
+    height: 2.5rem; /* 50px -> 2.5rem */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.25rem; /* Calc reduction: 20px -> 1.25rem */
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
     border: 0.125rem solid black; /* 2px -> 0.125rem */
     box-sizing: border-box;
     border-radius: 0.3125rem; /* 5px -> 0.3125rem */
@@ -334,13 +293,12 @@
     background: none;
     border: none;
     color: black;
-    font-size: 0.875rem; /* Calc reduction: 16px -> 0.875rem */
+    font-size: 0.875rem; /* 16px -> 0.875rem */
     text-align: center;
     cursor: pointer;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "IBM Plex Mono", monospace;
     transition: color 0.3s ease;
   }
 

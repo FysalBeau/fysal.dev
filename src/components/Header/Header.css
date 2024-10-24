@@ -1,18 +1,4 @@
 /* Mobile View */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
 /* Styles for screens with max-width of 600px */
 @media only screen and (max-width: 600px) {
   .header-item,
@@ -85,20 +71,6 @@
 }
 
 /* Tablet View */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
 /* Styles for screens with min-width of 601px and max-width of 949px */
 @media only screen and (min-width: 601px) and (max-width: 949px) {
   .header-container {
@@ -196,20 +168,6 @@
 }
 
 /* Desktop View */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
-/*             */
 /* Styles for screens with min-width of 950px */
 @media only screen and (min-width: 950px) {
   .header-container {
