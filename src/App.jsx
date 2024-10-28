@@ -115,7 +115,7 @@ const App = () => {
                 className={`fade-in ${isVisible.about ? "appear" : ""}`}
                 data-section="about"
               >
-                <About />
+                <About isVisible={isVisible.about} />
               </div>
               <div
                 id="projects"

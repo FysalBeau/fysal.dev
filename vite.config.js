@@ -6,7 +6,7 @@ import compress from 'vite-plugin-compression'; // enable compression to optimiz
 export default defineConfig({
   plugins: [react(), compress()],
   server: {
-    port: 3000, // Update default port to 3000
+    port: 4000, // Update default port to 3000
     open: true, // Open the browser on server start
   },
 });
