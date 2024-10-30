@@ -49,7 +49,7 @@ const About = ({ isVisible }) => {
       function typeWriter(text, i, span, callback) {
         if (i < text.length) {
           span.textContent += text[i]; // Append the next character to the span's content
-          setTimeout(() => typeWriter(text, i + 1, span, callback), 15); // Type the next character after 25ms
+          setTimeout(() => typeWriter(text, i + 1, span, callback), 5); // Type the next character after 25ms
         } else {
           callback(); // Call the callback when all characters are typed
         }
