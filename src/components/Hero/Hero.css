@@ -26,6 +26,7 @@
 @media only screen and (max-width: 600px) {
   .hero-container {
     margin-bottom: 2.5rem; /* 40px -> 2.5rem */
+    margin-top: 2.5rem;
   }
 
   .hero-card {
