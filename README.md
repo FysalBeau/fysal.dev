@@ -1,5 +1,7 @@
 # Fysal.dev
 
+![logo](public/assets/icons/logo-default.svg)
+
 Welcome to my personal portfolio website! This site showcases my work, skills, and projects as a software developer.
 
 ## Table of Contents
