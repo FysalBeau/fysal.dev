@@ -4,7 +4,9 @@ import "./About.css";
 const images = [
   "./assets/images/about-image-1.jpg",
   "./assets/images/about-image-2.jpg",
-  "./assets/images/about-image-3.jpg",
+  "./assets/images/about-image-3.jpeg",
+  "./assets/images/about-image-4.jpg",
+  "./assets/images/about-image-5.jpeg",
 ];
 
 const About = ({ isVisible }) => {
