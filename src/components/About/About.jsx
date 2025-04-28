@@ -20,34 +20,38 @@ const About = ({ isVisible }) => {
       images.forEach((src) => {
         const img = new Image();
         img.src = src;
+        // img.onload = () => console.log(`Image loaded: ${src}`);
       });
     };
 
     preloadImages();
   }, []);
 
-  // Carousel logic with a slight delay before starting
   useEffect(() => {
     const startCarousel = () => {
       const interval = setInterval(() => {
         // Start fade-out
         setFadeClass("fade-out");
-
+  
         // Wait for fade-out to complete before changing the image
         setTimeout(() => {
           setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-          setFadeClass("fade-in"); // Start fade-in after updating the image
-        }, 500); // Match this duration with your CSS transition time
-      }, 4000); // Total time before the next image (fade-out + fade-in)
-
+  
+          // Start fade-in after updating the image
+          setTimeout(() => {
+            setFadeClass("fade-in");
+          }, 100); // Delay fade-in slightly after the image swap
+        }, 500); // Match this duration with your CSS transition time for fade-out
+      }, 4500); // Total time before the next image (fade-out + fade-in + display time)
+  
       return interval;
     };
-
+  
     // Delay the start of the carousel
     const timeout = setTimeout(() => {
       startCarousel();
     }, 500); // Delay before starting
-
+  
     return () => {
       clearTimeout(timeout); // Clear timeout on unmount
     };
