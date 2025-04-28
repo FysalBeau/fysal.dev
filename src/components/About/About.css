@@ -43,6 +43,10 @@
   opacity: 1;
 }
 
+.about-image.fade-out {
+  opacity: 0;
+}
+
 /* Title Styles */
 .about-title {
   font-size: var(--font-size-title-mobile); /* 1.125rem */

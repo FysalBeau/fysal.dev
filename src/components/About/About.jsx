@@ -16,13 +16,16 @@ const About = ({ isVisible }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFadeClass(""); // Remove fade class to start fade-out
+      // Start fade-out
+      setFadeClass("fade-out");
+  
+      // Wait for fade-out to complete before changing the image
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setFadeClass("fade-in"); // Add fade class to start fade-in
-      }, 500); // Wait for fade-out duration before changing image
-    }, 4000); // Total time before next image (fade-out + fade-in)
-
+        setFadeClass("fade-in"); // Start fade-in after updating the image
+      }, 500); // Match this duration with your CSS transition time
+    }, 4000); // Total time before the next image (fade-out + fade-in)
+  
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
 
